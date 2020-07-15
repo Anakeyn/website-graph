@@ -682,6 +682,9 @@ pr <- page.rank(network,directed=TRUE)
 #'
 #'
 
+#create a default label for each page : for example the URL
+UrlLabel <- NetwNodes$Url
+                        
 #Construction de labels à partir des meilleurs pagerank
 NewIndex <- data.frame(UrlLabel, pr$vector)
 #Pour afficher les labels des pages principales.
